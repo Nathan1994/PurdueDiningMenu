@@ -59,7 +59,7 @@ function sendMail(text) {
 
   var mailOptions = {
     from: email.email,
-    to: email.email,
+    to: email.target,
     subject: 'Purdue Dining Menus',
     html: text
   };
