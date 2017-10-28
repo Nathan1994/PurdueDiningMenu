@@ -1,0 +1,23 @@
+{
+  "name": "purduediningmenu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "nodemailer" : "latest",
+    "cheerio"    : "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathan1994/PurdueDiningMenu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nathan1994/PurdueDiningMenu/issues"
+  },
+  "homepage": "https://github.com/Nathan1994/PurdueDiningMenu#readme"
+}
