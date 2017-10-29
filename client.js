@@ -24,10 +24,13 @@ for (var j = 0; j < nextDayToQuery; j++) {
   }
 }
 
-searchWithPairs(function(){
-  loadHTML()
-});
+setInterval(startSearch, 1 * 60 * 60 * 1000);
 
+function startSearch() {
+  searchWithPairs(function(){
+    loadHTML()
+  });
+}
 
 function loadHTML() {
   fs.readFile(htmlPath, 'utf8', function (err,data) {
@@ -44,6 +47,8 @@ function loadHTML() {
       $('.content-table > tbody').append(htmlLabel);
     }
     sendMail($.html());
+    queryIndex = 0;
+    targetDinings = [];
   });
 }
 
