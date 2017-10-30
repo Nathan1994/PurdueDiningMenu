@@ -8,7 +8,8 @@
   },
   "dependencies" : {
     "nodemailer" : "latest",
-    "cheerio"    : "latest"
+    "cheerio"    : "latest",
+    "mysql"      : "latest"
   },
   "repository": {
     "type": "git",

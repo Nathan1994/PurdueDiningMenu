@@ -24,7 +24,7 @@ for (var j = 0; j < nextDayToQuery; j++) {
   }
 }
 
-setInterval(startSearch, 1 * 60 * 60 * 1000);
+// setInterval(startSearch, 1 * 60 * 60 * 1000);
 
 function startSearch() {
   searchWithPairs(function(){
@@ -126,3 +126,5 @@ function getRequest(url, callback) {
     });
   });
 }
+
+module.exports.getRequest = getRequest;
