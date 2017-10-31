@@ -3,7 +3,14 @@ const item = require('./item.js');
 const database = require('./database.js');
 const diningURL = require('./diningURL.js');
 
-refreshItems();
+// refreshItems();
+// database.queryFavouriteItemsByUser(1, function(itemIds) {console.log(itemIds);});
+console.log(diningURL.urls[0]);
+client.getRequest(diningURL.urls[0], function(response){
+  let json = JSON.parse(response);
+  console.log(json);
+});
+
 
 function refreshItems() {
   var index = 0;
